@@ -63,6 +63,6 @@ It will also only test core and memory combinations that fall within the ratio o
 
 If you found the script useful, please consider making a donation :)  
 
-BTC: 1CM1zDcfUpg81fCJxacq2nNsZCE3G96FLH
-LTC: Lej4FBr9k3HM49GJix922xyJCm1whqHmfU
+BTC: 1CM1zDcfUpg81fCJxacq2nNsZCE3G96FLH  
+LTC: Lej4FBr9k3HM49GJix922xyJCm1whqHmfU  
 FTC: 72KjWoZKM3C8S8xaujTNwcFjFbq48XNfpg  
