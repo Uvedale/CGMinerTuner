@@ -56,10 +56,10 @@ The results are also stored in a log file within the same directory.
 The following will search for the best core and memory clock for the second GPU in host 192.168.0.4 between core clocks of 800 to 1100 and memory clocks 1100-1500:  
 
 <pre>
-python CGMinerTuner.py -h 192.168.0.4 -d 1 -c 800-1100 -m 1100-1500 -r 0.5-0.7 -t 82 --showtop 10
+python CGMinerTuner.py -i 192.168.0.4 -d 1 -c 800-1100 -m 1100-1500 -r 0.5-0.7 -t 82 --showtop 10
 </pre>
 
-It will also only test core and memory combinations that fall within the ratio of 0.5 to 0.7, prevent testing from letting the GPU exceed 82 degrees, and show the top 10 results.
+It will also only test core and memory combinations that fall within the ratio of 0.5 to 0.7, prevent testing from letting the GPU exceed 82 degrees, and show the top 10 results. Specifiying the IP address and device number isn't compulsory, they default to localhost and device 0 respectively.
 
 If you found the script useful, please consider making a donation :)  
 
