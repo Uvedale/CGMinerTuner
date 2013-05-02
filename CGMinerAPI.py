@@ -77,6 +77,8 @@ class CGMinerAPI:
          query += '|' + str(device)
          if not value == '':
             query += ','+str(value)
+      elif not value == '':
+         query += '|' + str(value)
       result = self.sendCommand(query)
       if result == False:
          raise Exception('Communication with CGMiner failed.')
