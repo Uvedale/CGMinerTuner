@@ -153,5 +153,5 @@ class CGMinerAPI:
          if (len(devices) > 1):
             self.numGPUs = int(devices[1]['Count'])
             return self.numGPUs
-      except Exception, e:
+      except Exception as e:
          raise e

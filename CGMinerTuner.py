@@ -12,7 +12,11 @@
 
 from CGMinerAPI import CGMinerAPI
 import time
-from Queue import Queue
+try:
+   from queue import Queue
+except ImportError:
+   from Queue import Queue
+
 import argparse, sys
 
 class Logger:
@@ -151,7 +155,7 @@ class CGTuner:
          self.report()
          self.api.setClock(self.device, GPUInfo['GPU Clock'])
          self.api.setMemClock(self.device, GPUInfo['Memory Clock'])
-      except Exception, e:
+      except Exception as e:
          print('Exception occured: {0}'.format(e))
          exit(-2)
 
