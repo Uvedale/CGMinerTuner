@@ -163,7 +163,6 @@ class CGTuner:
 
    def report(self):
       self.logger.writeEntry('-- Report on {0} results --'.format(len(self.results)))
-      dud = {'MH': 0, 'core' : 0, 'mem' : 0, 'temp': 0}
       top = []
       for entry in self.results:
          if len(top) < self.showTop:
