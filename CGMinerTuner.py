@@ -163,15 +163,8 @@ class CGTuner:
 
    def report(self):
       self.logger.writeEntry('-- Report on {0} results --'.format(len(self.results)))
-      top = []
-      for entry in self.results:
-         if len(top) < self.showTop:
-            top.append(entry)
-         else:
-            for i, item in enumerate(top):
-               if entry['MH'] > item['MH']:
-                  top[i] = entry
-                  break
+
+      top = sorted(self.results, key = lambda entry: entry['MH'], reverse = True)[:self.showTop]
 
       rep = '\n'
       for i, item in enumerate(top):
